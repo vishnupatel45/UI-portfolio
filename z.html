@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../public/image/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: black;
+            margin-top: 20px;
+
+        }
+        header{
+            display: grid;
+            grid-template-columns: 8fr 4fr;
+            font-family: arial;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .brand{
+            font-size: 35px;
+            font-weight: bold;
+            margin-right: 20px;
+            margin-left: 150px ;
+            letter-spacing: 5px;
+        }
+        span{
+            margin-left: 20px;
+        }
+        button{
+            margin-left: 300px;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+            border: 1px solid white;
+            background-color: black;            
+        }
+        .one{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            color: white;
+            height: 650px;
+            overflow:hidden;
+        }
+        .headline{
+            font-size: 50px;
+            font-family: Arial;
+            font-weight: bolder;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 30px;
+            margin-bottom: 20px;
+        }
+        .text{
+            font-size: 20px;
+            font-family: Arial;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .but{
+            background-color: orangered;
+            border-radius: 30px;
+            padding: 5px;
+            border: 1px solid white;
+            width: 250px;
+            height: 70px;            
+        }
+        .bi-apple, .bi-eyeglasses{
+            padding-right: 10px;
+            float: left;
+            font-size: 30px;
+        }
+        .button{
+            height: 300px;        
+            width: 500px;    
+        }
+        .two{
+            padding-top: 130px;
+            padding-bottom: 130px;
+            padding-left: 200px;
+            color: white;
+        }
+        .bi-play-fill{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: orangered;
+            display: inline-block;
+        }
+        .play{
+            border: 1px solid white;
+            width:200px ;
+            height: 80px;
+            display: inline-block;
+        }
+        iframe{
+            border-radius: 50%;
+            background-color: orangered;
+        }
+        .video{
+            height:70px;
+            width: 250px;
+            border: 1px solid white;
+            border-radius: 20px;
+        }
+        .vid{
+            padding: 10px;
+        }
+        .vid span{
+          position: relative;
+          top:-20px
+        }
+        .text1{
+            font-size: 45px;
+        }
+        .three{
+            display: flex;
+            font-family: arial;
+            font-size: 20px;
+            background-color: orangered;
+            color: white;
+            padding: 50px;
+            padding-left: 80px;
+            height: 800px;
+            overflow: hidden;
+        }
+        .car-intro{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .main-three-text{
+            padding-top: 80px;
+            padding-left: 180px;
+            padding-right: 120px;
+        }
+        .bi-arrow-right-circle-fill{
+            font-size: 60px;
+            padding-right: 10px;
+            float: left;
+        }
+        .four{
+            display: flex;
+            padding: 50px;
+            margin-bottom: 80px;
+        }
+        .main-four-text{
+            color: white;
+            padding: 90px;
+        }
+        .four-intro{
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .four-same{
+            font-size: 25px;
+        }
+        .four-numbers{
+            font-size: 50px;
+            float: left;
+            padding-right: 20px;
+            color: orangered;
+        }
+        figcaption{
+            background-color: white;
+            color: black;
+            font-size: 30px;
+            height: 30px;
+            padding-top:40px ;
+            padding-bottom:150px ;
+            padding-left: 15px;
+        }
+        figcaption:hover{
+            color: orangered;
+        }
+        .bi-arrow-down-right{
+            padding-left: 180px;
+        }
+        .five{
+            color: white;
+            padding-left: 200px;
+            padding-right: 250px;
+        }
+        .five-text{
+            font-size: 60px;
+        }
+        .five-text1{
+            font-size: 15px;
+            margin-bottom: 150px;
+        }
+        .six{
+            background-color: rgb(207, 71, 18);
+            background-size: cover;
+            height: 900px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            overflow: hidden;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .left-text{
+            padding-top: 310px;
+            text-align: right;
+            font-size: 20px;
+            padding-right: 50px;
+        }
+        .right-text{
+            padding-top: 310px;
+            text-align: left;
+            font-size: 20px;
+            padding-left: 50px;
+        }
+        .six-img{
+            padding-top: 130px;
+        }
+        .same-text{
+            color: white;
+
+        }
+        .six-img-text{
+            padding-bottom: 50px;
+            color: white;
+            text-align: center;
+            font-size: 35px;
+        }
+        .seven{
+            height: 450px;
+            padding-left: 180px;
+            padding-right: 180px;
+            text-align: center;
+            padding-top: 150px;
+            margin-bottom: 180px;
+        }
+        .seven-text{
+            color: white;
+            font-size: 55px;
+        }
+        footer{
+            color: white;
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-bottom: 60px;
+        }
+        .foot{
+            padding-top: 60px;
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+            padding-bottom: 60px;
+        }
+        input{
+            height: 80px;
+            width: 250px;
+            border-color: 1px solid white;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            padding-left: 30px;
+        }
+        .bi-arrow-left-circle-fill{
+            position: relative;
+            top: -65px;
+           font-size: 35px;
+           right: -200px;
+        }
+        .logo{
+            letter-spacing: 5px;
+        }
+        .copyrights{
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+        }
+    </style>
+</head>
+<body>
+    <a href="./UI-portfolio/ui-portfolio.html" target="_blank"><button class="btn btn-close btn-warning"></button></a>
+    <header>
+        <div>
+            <span class="brand">
+                CUBE
+            </span>
+            <span>
+                Landings
+            </span>
+            <span>
+                Pages
+            </span>
+            <span>
+                Account
+            </span>
+            <span>
+                shop
+            </span>
+            <span>
+                Docs
+            </span>
+        </div>
+        <div>
+            <button> Buy Cube </button>
+        </div>
+    </header>
+    <section>
+        <main class="one">
+            <div>
+                <div class="headline">
+                    Instantly book cars near you. Today.
+                </div>
+                <div class="text">
+                    Get the fastest and most convenient short-time car rental service in town.
+                </div>
+                <div class="button">
+                    <button class="but"><span class="bi bi-apple"></span>Avilable on app store</button>
+                    <br>
+                    <button class="but"><span class="bi bi-eyeglasses"></span>Avilable on play store</button>
+                </div>
+            </div>
+            <div>
+                <img src="public/image/pnone.1.png" class="ms-5 mt-5 pt-3 ps-3" width="550px">
+            </div>
+           
+        </main>
+        <hr style=" color: white;">
+        <main class="two">
+            <div style="color: red;">
+                Why CUBE ?
+            </div>
+            <div class="text1">
+                Learn more about our car sharing platform in the light demo version or get in the driver's seat and get paid
+            </div>
+            <div class="video">
+                <div class="vid">
+                    <iframe src="https://www.youtube.com/embed/Ft-v5aLDWqc" width="47px" height="47px"></iframe>
+                    <span>Video — 25 seconds</span>
+                </div>
+            </div>
+        </main>
+        <hr style=" color: white;">
+        <main class="three">
+            <div>
+                <img src="public/image/phone.2.png" width="480px">
+            </div>
+            <div class="main-three-text">
+                <div>
+                    SKIP THE RENTAL COUNTER
+                </div>
+                <br>
+                <div class="car-intro">
+                    Discover the worlds largest car sharing marketplace.
+                </div>
+                <br>
+                <div class="same">
+                    <span class="bi bi-arrow-right-circle-fill"></span>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Eos earum odio explicabo corrupti blanditiis laudantium architecto
+                </div>
+                <br>
+                <div class="same">
+                    <span class="bi bi-arrow-right-circle-fill"></span>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Eos earum odio explicabo corrupti blanditiis laudantium architecto
+                </div>
+                <br>
+                <div class="same">
+                    <span class="bi bi-arrow-right-circle-fill"></span>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Eos earum odio explicabo corrupti blanditiis laudantium architecto
+                </div>
+            </div>
+        </main>
+        <main class="four">
+            <div class="main-four-text">
+                <div class="four-intro">How do I become a carsharing service user?</div>
+                <br>
+                <div class="four-same">
+                   <span class="four-numbers">1.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                </div>
+                <br>
+                <div class="four-same">
+                    <span class="four-numbers">2.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                </div>
+                <br>
+                <div class="four-same">
+                    <span class="four-numbers">3.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                </div>
+            </div>
+            <div>
+                <figure>
+                    <img src="public/image/z1.pic.png" width="500px" height="500px">
+                    <figcaption>Get in the Drives seats get paid starting today <span class="bi bi-arrow-down-right"></span> </figcaption>
+                </figure>
+            </div>
+        </main>
+        <main class="five">
+            <div>
+                <div class="five-text">
+                    " <br>
+                    <span class="text-warnin">Build better websites</span>. A new template inspired by the world’s best design practices.
+                </div>
+                <br>
+                <div class="five-text1">
+                    Valerie Doe
+                    Senior Product Designer
+                </div>
+            </div>
+        </main>
+        <hr style=" color: white;">
+        <main class="six">
+            <div class="left-text">
+                <div class="same-text">
+                    Professional relocation <span style="color: gray;">package to help you move to Amsterdam.</span>
+                </div>
+                <br>
+                <div class="same-text">
+                    We know how <span style="color: gray;">to manage distributed teams, so working from home is an option for most of our vacancies.</span>
+                </div>
+            </div>
+            <div class="six-img">
+                <div class="six-img-text">
+                    Take control of your app.
+                </div>
+                <img src="public/image/pnone.1.png" width="450px">
+            </div>
+            <div class="right-text">
+                <div class="same-text">
+                    Professional relocation<span style="color: gray;">package to help you move to Amsterdam.</span>
+                </div>
+                <br>
+                <div class="same-text">
+                    We know how <span style="color: gray;">to manage distributed teams, so working from home is an option for most of our vacancies.</span>
+                </div>
+            </div>
+        </main>
+        <main class="seven">
+            <div class="seven-text">
+                Ready to start cruising your city? <br> Download Cube App
+            </div>
+            <div class="button">
+                <button class="but"><span class="bi bi-apple"></span>Avilable on app store</button>
+                <br>
+                <button class="but"><span class="bi bi-eyeglasses"></span>Avilable on play store</button>
+            </div>
+        </main>
+    </section>
+    <hr style=" color: white;">
+    <footer>
+        <div class="foot">
+            <div class="logo">
+                CUBE
+            </div>
+            <div>
+                <div>
+                    Documentation
+                </div>
+                <div>
+                    componantes
+                </div>
+                <div>
+                    blocks
+                </div>
+                <div>
+                    changelog
+                </div>
+                <div>
+                    Roadmap
+                </div>
+            </div>
+            <div class="input">
+                <span><input type="email"  placeholder="Your Mail"></span>
+                <span class="bi bi-arrow-left-circle-fill"></span>
+            </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <div>
+                Copyrights © 2021
+            </div>
+            <div>
+                facebook twitter linkedin
+            </div>
+            <div>
+                7th Avenue, Ameerpet INDIA 10255
+            </div>
+    </footer>
+</body>
+</html>
