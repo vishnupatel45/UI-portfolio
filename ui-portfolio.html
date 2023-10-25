@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu patel</title>
+    <link rel="icon" href="../public/image/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #home {
+            background-image: url(../public/image/webdevelopment-pic.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100%;
+        }
+
+        h3 {
+            color: white;
+            font-family: arial;
+            font-weight: bold;
+            font-size: 35px;
+            position: absolute;
+            top: 300px;
+            left: 980px;
+            padding-top: 0px;
+        }
+
+        p {
+            color: none;
+            text-shadow: 0px 0px 2px white;
+            position: absolute;
+            top: 100px;
+            left: 980px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        img {
+            padding-bottom: 20px;
+        }
+
+        .progress {
+            margin-bottom: 20px;
+        }
+
+        .progress-per {
+            align-items: right;
+        }
+
+        .proj-1 {
+            background-image: url(../public/image/academia.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 600px;
+            height: 400px;
+            margin-left: 250px;
+        }
+
+        .proj-2 {
+            background-image: url(../public/image/cube.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 600px;
+            height: 400px;
+            margin-left: 250px;
+        }
+
+        .edu-text {
+            font-weight: bold;
+        }
+
+        .year {
+            color: gray;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .contact {
+            position: relative;
+            right: -450px;
+        }
+
+        .para {
+            text-align: justify;
+            display: inline-block;
+            width: 80em;
+            margin-left: 80px;
+        }
+
+        .skils-section {
+            padding-left: 20px;
+        }
+
+        #skill {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        #project,
+        #Education {
+            background-color: aquamarine;
+
+        }
+
+        .bi-arrow-up-circle {
+            position: fixed;
+            bottom: 5px;
+            right: 20px;
+            font-size: 40px;
+        }
+
+        .li-input {
+            margin-left: 250px;
+        }
+
+        .navbar-nav {
+            margin-left: 420px;
+        }
+
+        @media screen and (orientation:portrait) {
+            p {
+                position: absolute;
+                top: auto;
+                left: 15px;
+            }
+
+            h3 {
+                display: none;
+            }
+
+            .proj-1,
+            .proj-2 {
+                margin-left: 10px;
+            }
+
+            .li-input {
+                margin-left: 0px;
+            }
+
+            .para {
+                width: 25em;
+                font-size: 10px;
+                margin-left: 10px;
+            }
+
+            .proj-1,
+            .proj-2 {
+                width: 150px;
+                height: 100px;
+                margin-left: 41px;
+            }
+
+            #Education {
+                font-size: 0.8rem;
+            }
+
+            .navbar-nav {
+                margin-left: 0px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <h2 class="navbar-brand">vishnu Patel</h2>
+                <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse"> <span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="navbar-collapse collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item "><a href="#home" class="nav-link active">home</a></li>
+                        <li class="nav-item "><a href="#skill" class="nav-link">skill</a></li>
+                        <li class="nav-item "><a href="#project" class="nav-link">project</a></li>
+                        <li class="nav-item "><a href="#Education" class="nav-link">Education</a></li>
+                        <li class="nav-item input-group li-input "><input type="text" placeholder="search.me"
+                                class="form-control"><button class="bi-search btn btn-warning"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="home">
+        <p>Hithere,i'm<br> VISHNU PATEL <br>UX/UI Developer.</p>
+        <h3>turning <span class="text-warning">idea</span> inot <br> real life products</h3>
+        <a href="#home" class="bi-arrow-up-circle"></a>
+    </section>
+    <hr>
+    <section id="skill">
+        <h2 class="bg-black text-light">My programming skils</h2>
+        <div class="skils-section">
+            <div class="c">
+                <img src="../public/image/c.png" width="100px">
+                <div class="progress-per">
+                    <span>70%</span>
+                </div>
+                <div class="progress ">
+                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated "
+                        style="width: 70%;">
+                    </div>
+                </div>
+            </div>
+            <div class="html">
+                <img src="../public/image/html.jpeg" width="100px">
+                <div class="progress-per">
+                    <span>90%</span>
+                </div>
+                <div class="progress ">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated "
+                        style="width: 90%;">
+                    </div>
+                </div>
+            </div>
+            <div class="css">
+                <img src="../public/image/css.jpeg" width="100px">
+                <div class="progress-per">
+                    <span>80%</span>
+                </div>
+                <div class="progress ">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated "
+                        style="width: 85%;">
+                    </div>
+                </div>
+            </div>
+            <div class="Javascript">
+                <img src="../public/image/js.jpeg" width="100px">
+                <div class="progress-per">
+                    <span>30%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated "
+                        style="width: 30%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <h2 class="bg-warning">MY PROJECTS</h2>
+        <div class="proj-1 d-flex justify-content-center">
+            <a href="../Academia.html" target="-blank"><button class="btn btn-danger bi-collection">prev</button></a>
+        </div>
+        <span class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni modi quis dolores
+            quos neque
+            animi repellat nam reprehenderit sed, cum eligendi iure alias. Nostrum doloribus numquam beatae deserunt,
+            perspiciatis, dolores aut totam incidunt oris ex consectetur sed provident. Atque exercitationem laboriosam
+            qui saepe nostrum odio non ipsam similique. Sunt earum beatae provident accusantium quisquam dolore officiis
+            velit doloremque dolor ipsa sed, quis optio iusto quod atque placeat tempora, explicabo modi. Commodi, qui
+            modi nam vitae suscipit omnis natus velit, eaque, nobis nisi rem. Voluptate voluptatum similique hic? At
+            fuga quae dolor necessitatibus ducimus assumenda reiciendis corrupti sequi?</span>
+        <hr>
+        <div class="proj-2 d-flex justify-content-center">
+            <a href="../z.html" target="-blank"><button class="btn btn-danger bi-collection">prev</button></a>
+        </div>
+        <span class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni modi quis dolores
+            quos neque
+            animi repellat nam reprehenderit sed, cum eligendi iure alias. Nostrum doloribus numquam beatae deserunt,
+            perspiciatis, dolores aut totam incidunt oris ex consectetur sed provident. Atque exercitationem laboriosam
+            qui saepe nostrum odio non ipsam similique. Sunt earum beatae provident accusantium quisquam dolore officiis
+            velit doloremque dolor ipsa sed, quis optio iusto quod atque placeat tempora, explicabo modi. Commodi, qui
+            modi nam vitae suscipit omnis natus velit, eaque, nobis nisi rem. Voluptate voluptatum similique hic? At
+            fuga quae dolor necessitatibus ducimus assumenda reiciendis corrupti sequi?</span>
+    </section>
+    <section id="Education">
+        <h2 class="bg-black text-light">Education:</h2>
+        <b>Graduation</b>
+        <div class="edu-text">BSC(MSCS),BJR GOVT collage,Hyderabad,<span class="ps-4 ">CGPA : 7.9/10 .</span></div>
+        <div class="year">2020-2023</div>
+        <br>
+        <b>Inter college</b>
+        <div class="edu-text">MPC,VIGNAN JUNIOR collage,Hyderabad, <span class="ps-4 ">TOTAL : 848/1000 .</span></div>
+        <div class="year">2018- AUG2020</div>
+        <br>
+        <div class="edu-text">SSC,GEETHANJALI HIGH SCHOOL,Hyderabad, <span class="ps-4 ">GPA : 7.8/10 .</span></div>
+        <div class="year">2017-2018</div>
+
+    </section>
+    <footer>
+        <div>prepade <span class="bi-heart-fill"></span> by vishnu
+        </div>
+        <div>@copywright 2023 </div>
+    </footer>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
